@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPLENDENCE | Winter Carnival</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crimson: {
+                            500: '#D90032',
+                            700: '#8B0000',
+                        },
+                        gold: '#FFD700',
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-body text-gray-800">
+    <!-- Navigation -->
+    <custom-action-bar></custom-action-bar>
+    <custom-nav></custom-nav>
+<!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-b from-crimson-700 to-crimson-500 overflow-hidden">
+        <custom-snowflakes></custom-snowflakes>
+<div class="text-center z-10 px-4">
+            <h1 class="text-6xl md:text-8xl font-heading font-bold text-white mb-2">RESPLENDENCE</h1>
+            <div class="bg-white text-crimson-700 text-xl md:text-2xl font-bold px-6 py-2 rounded-full inline-block mb-8">
+                WINTER CARNIVAL
+            </div>
+            <p class="text-xl text-white mb-8">Fun Filled Event & Activities</p>
+            <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 inline-block">
+                <p class="text-crimson-700 font-bold mb-2">December 20, 2025 • 11:00 AM - 7:00 PM</p>
+                <a href="#tickets" class="bg-crimson-700 hover:bg-crimson-800 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105 inline-block shadow-lg">
+                    Book Now @ ₹100
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <i data-feather="chevron-down" class="text-white animate-bounce h-8 w-8"></i>
+        </div>
+    </section>
+<!-- Highlights Section -->
+<section id="highlights" class="py-20 px-4 max-w-6xl mx-auto">
+<h2 class="text-4xl font-heading font-bold text-center text-crimson-700 mb-16">Special Attractions</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Highlight Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🍽️</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Scrumptious Food</h3>
+                    <p class="text-gray-600">A delightful spread of mouth-watering dishes awaits visitors — from classic carnival snacks to fresh beverages and sweet treats.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🎠</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Rides</h3>
+                    <p class="text-gray-600">Thrilling and joyful rides set the carnival spirit alive! Children enjoy swings, mini-trains, bouncy castles, and other safe amusement rides.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🎯</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Games</h3>
+                    <p class="text-gray-600">Interactive game counters like ring toss, dart throw, bottle flip, and balloon burst keep participants engaged throughout the day.</p>
+                </div>
+            </div>
+            <!-- Highlight Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🛍️</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Attractive Stalls</h3>
+                    <p class="text-gray-600">Creative stalls line the venue with a colourful mix of handmade crafts, snacks, fun accessories, festive items and activity booths.</p>
+                </div>
+            </div>
+<!-- Highlight Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🎟️</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Lucky Draw</h3>
+                    <p class="text-gray-600">The lucky draw adds suspense and excitement as everyone eagerly waits for their number to be called with attractive prizes.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🎷</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Band Presentation</h3>
+                    <p class="text-gray-600">A vibrant band or musical performance sets the perfect rhythm for the event with energetic beats and lively tunes.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 7 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">👠</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Ramp Walk</h3>
+                    <p class="text-gray-600">Showcases confidence and creativity as participants step onto the runway in stylish or themed attire.</p>
+                </div>
+            </div>
+            <!-- Highlight Card 8 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🌟</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Talent Hunt</h3>
+                    <p class="text-gray-600">A stage where talent takes the spotlight! Participants get the opportunity to showcase their skills in various performing arts.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 9 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">💅</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Nail Art</h3>
+                    <p class="text-gray-600">Get creative with beautiful nail art designs from our professional artists.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 10 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">✏️</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Tattoo</h3>
+                    <p class="text-gray-600">Temporary tattoo station with fun designs for all ages.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 11 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🔮</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Astrotalk by Kiama</h3>
+                    <p class="text-gray-600">Get insights about your future from our expert astrologer.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 12 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🎮</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Console/PC Games</h3>
+                    <p class="text-gray-600">Gaming zone with latest console and PC games for all gaming enthusiasts.</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 13 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">💃</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-2">Flash Mob</h3>
+                    <p class="text-gray-600">Surprise dance performance that will get everyone grooving!</p>
+                </div>
+            </div>
+</div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-heading font-bold text-center text-crimson-700 mb-16">Get Your Tickets</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8 items-center justify-center">
+                <!-- Ticket Card -->
+                <div class="bg-white rounded-xl shadow-xl p-8 max-w-md border-2 border-crimson-700 transform hover:scale-105 transition-all">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-crimson-700 mb-2">Payment</h3>
+                        <p class="text-gray-600 mb-4">Only Entry</p>
+                        <div class="text-4xl font-bold text-crimson-700">₹100</div>
+                    </div>
+<div class="flex justify-center mb-6">
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/93wH2GS2/image-2.png" alt="Payment QR Code" class="w-48 h-48 border border-gray-200 p-2"></a>
+</div>
+<a href="https://chat.whatsapp.com/F70wh8zoiPuFBmKrUQV8nf" 
+class="block bg-green-500 hover:bg-green-600 text-white text-center font-bold py-3 px-6 rounded-lg transition-all">
+                        <i data-feather="message-square" class="inline mr-2"></i> Book via WhatsApp
+                    </a>
+                </div>
+                <!-- Payment Info -->
+                <div class="bg-white rounded-xl shadow-lg p-8 max-w-md">
+                    <h3 class="text-xl font-bold text-crimson-700 mb-4">After payment</h3>
+                    <p class="mb-4 text-gray-600">Join our WhatsApp group and send:</p>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                        <li>Payment screenshot</li>
+                        <li>Your full name</li>
+                        <li>Phone number</li>
+                    </ol>
+                </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('assets/snowflakes.png')] opacity-10"></div>
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <h2 class="text-4xl font-heading font-bold text-center text-crimson-700 mb-16">Competitions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Competition Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🏆</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-crimson-700 mb-2">Competitions</h3>
+                        <p class="text-gray-600">Exciting competitions for all ages with amazing prizes. Show your skills and win!</p>
+                    </div>
+                </div>
+
+                <!-- Competition Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">👩‍👧</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-crimson-700 mb-2">Mom and Me</h3>
+                        <p class="text-gray-600">Special bonding activities for mothers and children. Create beautiful memories together!</p>
+                    </div>
+                </div>
+
+                <!-- Competition Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">👨‍👦</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-crimson-700 mb-2">Dad and Me</h3>
+                        <p class="text-gray-600">Fun challenges designed for fathers and their children. Team up and win!</p>
+                    </div>
+                </div>
+
+                <!-- Competition Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">👠</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-crimson-700 mb-2">Ramp Walk</h3>
+                        <p class="text-gray-600">Showcase your style and confidence on our special ramp. Best walk wins!</p>
+                    </div>
+                </div>
+
+                <!-- Competition Card 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🎤</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-crimson-700 mb-2">Talent Hunt</h3>
+                        <p class="text-gray-600">Show us your special talent! Singing, dancing, comedy - all talents welcome.</p>
+                    </div>
+                </div>
+
+                <!-- Competition Card 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🎸</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-crimson-700 mb-2">Sr. Citizen Rockerz</h3>
+                        <p class="text-gray-600">Special competition for our senior participants. Show us your moves and win prizes!</p>
+                    </div>
+                </div>
+            </div>
+</div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="py-12 bg-crimson-700 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-heading font-bold mb-6">Counting Down to the Festivities!</h2>
+            <div id="countdown" class="flex justify-center gap-4 text-2xl font-bold">
+                <div class="bg-white/20 rounded-lg p-4 min-w-[80px]">
+                    <div id="days" class="text-4xl">00</div>
+                    <div class="text-sm font-normal">Days</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4 min-w-[80px]">
+                    <div id="hours" class="text-4xl">00</div>
+                    <div class="text-sm font-normal">Hours</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4 min-w-[80px]">
+                    <div id="minutes" class="text-4xl">00</div>
+                    <div class="text-sm font-normal">Minutes</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4 min-w-[80px]">
+                    <div id="seconds" class="text-4xl">00</div>
+                    <div class="text-sm font-normal">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <div class="md:w-1/3">
+                    <h3 class="text-2xl font-heading font-bold text-crimson-500 mb-4">RESPLENDENCE</h3>
+                    <p class="mb-4">Winter Carnival: Fun Filled Event & Activities</p>
+                    <p class="text-gray-400">December 20, 2025 • 11:00 AM - 7:00 PM</p>
+                </div>
+                <div class="md:w-1/3 order-1 md:order-2 text-right">
+                    <h3 class="text-xl font-bold mb-4">Venue</h3>
+                    <address class="not-italic">
+                        Dwarka International School<br>
+                        Sector 12, Dwarka<br>
+                        New Delhi - 110078
+                    </address>
+                </div>
+                <div class="md:w-1/3 order-2 md:order-1">
+</div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 RESPLENDENCE Winter Carnival. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="components/action-bar.js"></script>
+    <script src="components/nav.js"></script>
+<script src="components/snowflakes.js"></script>
+<script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
