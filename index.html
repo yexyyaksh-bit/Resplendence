@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>RESPLENDENCE | Winter Carnival</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPLENDENCE | Winter Carnival</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -18,7 +18,6 @@
                             500: '#D90032',
                             700: '#8B0000',
                         },
-                        gold: '#FFD700',
                     },
                     fontFamily: {
                         heading: ['Playfair Display', 'serif'],
@@ -29,37 +28,51 @@
         }
     </script>
 </head>
+
 <body class="bg-white font-body text-gray-800">
-    <!-- Navigation -->
+
+    <!-- NAVIGATION -->
     <custom-action-bar></custom-action-bar>
     <custom-nav></custom-nav>
-<!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-crimson-700 to-crimson-500 overflow-hidden">
+
+    <!-- HERO SECTION (FULLY FIXED RESPONSIVE) -->
+    <section class="relative min-h-[90vh] md:min-h-screen flex items-center justify-center bg-gradient-to-b from-crimson-700 to-crimson-500 overflow-hidden pt-16 md:pt-0">
         <custom-snowflakes></custom-snowflakes>
-        <div class="text-center z-10 px-4 max-w-md mx-auto">
-            <h1 class="text-3xl font-heading font-bold text-white mb-2 hero-title">RESPLENDENCE</h1>
-            <div class="bg-white text-crimson-700 text-sm font-bold px-2 py-1 rounded-full inline-block mb-4">
-WINTER CARNIVAL
+
+        <div class="text-center z-10 px-4">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-heading font-bold text-white mb-3">
+                RESPLENDENCE
+            </h1>
+
+            <div class="bg-white text-crimson-700 text-lg sm:text-xl md:text-2xl font-bold px-6 py-2 rounded-full inline-block mb-6">
+                WINTER CARNIVAL
             </div>
-            <p class="text-lg text-white mb-6">Fun Filled Event & Activities</p>
-            <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 inline-block w-full max-w-xs mx-2">
-<p class="text-crimson-700 font-bold mb-2">December 20, 2025 • 11:00 AM - 7:00 PM</p>
-                <a href="#tickets" class="bg-crimson-700 hover:bg-crimson-800 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:scale-105 inline-block shadow-lg">
+
+            <p class="text-lg sm:text-xl text-white mb-6">Fun Filled Event & Activities</p>
+
+            <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 inline-block">
+                <p class="text-crimson-700 font-bold mb-3">
+                    December 20, 2025 • 11:00 AM - 7:00 PM
+                </p>
+
+                <a href="#tickets" class="bg-crimson-700 hover:bg-crimson-800 text-white font-bold py-3 px-8 rounded-full text-base sm:text-lg transition-all transform hover:scale-105 inline-block shadow-lg">
                     Book Now @ ₹100
                 </a>
             </div>
         </div>
-        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
-            <i data-feather="chevron-down" class="text-white animate-bounce h-8 w-8"></i>
+
+        <div class="absolute bottom-6 md:bottom-10 left-0 right-0 flex justify-center">
+            <i data-feather="chevron-down" class="text-white animate-bounce h-7 w-7 md:h-8 md:w-8"></i>
         </div>
     </section>
 <!-- Highlights Section -->
 <section id="highlights" class="py-20 px-4 max-w-6xl mx-auto">
 <h2 class="text-4xl font-heading font-bold text-center text-crimson-700 mb-16">Special Attractions</h2>
-            <div class="grid grid-cols-1 gap-3">
-<!-- Highlight Card 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition-all">
-<div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🍽️</div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Highlight Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
+                <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🍽️</div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-crimson-700 mb-2">Scrumptious Food</h3>
                     <p class="text-gray-600">A delightful spread of mouth-watering dishes awaits visitors — from classic carnival snacks to fresh beverages and sweet treats.</p>
@@ -213,8 +226,8 @@ class="block bg-green-500 hover:bg-green-600 text-white text-center font-bold py
         <div class="absolute inset-0 bg-[url('assets/snowflakes.png')] opacity-10"></div>
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <h2 class="text-4xl font-heading font-bold text-center text-crimson-700 mb-16">Competitions</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-<!-- Competition Card 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Competition Card 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all">
                     <div class="bg-crimson-700 text-white text-4xl p-6 flex justify-center">🏆</div>
                     <div class="p-6">
@@ -328,9 +341,3 @@ class="block bg-green-500 hover:bg-green-600 text-white text-center font-bold py
     <script>feather.replace();</script>
 </body>
 </html>
-
-
-
-
-
-
